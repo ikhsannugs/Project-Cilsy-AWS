@@ -10,5 +10,5 @@ Untuk Provisioning Load Balancer Nginx
 
 #!/bin/bash
 git clone https://github.com/ikhsannugs/Project-Cilsy-AWS.git
-chmod 500 /Project-Cilsy-AWS/webserver.sh
-/bin/bash /Project-Cilsy-AWS/webserver.sh
+chmod 500 /Project-Cilsy-AWS/loadbalance.sh
+/bin/bash /Project-Cilsy-AWS/loadbalance.sh
