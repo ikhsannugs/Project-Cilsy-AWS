@@ -1,0 +1,14 @@
+Untuk Provisioning Web Server
+
+#!/bin/bash
+git clone https://github.com/ikhsannugs/Project-Cilsy-AWS.git
+chmod 500 /Project-Cilsy-AWS/webserver.sh
+/bin/bash /Project-Cilsy-AWS/webserver.sh
+
+
+Untuk Provisioning Load Balancer Nginx
+
+#!/bin/bash
+git clone https://github.com/ikhsannugs/Project-Cilsy-AWS.git
+chmod 500 /Project-Cilsy-AWS/webserver.sh
+/bin/bash /Project-Cilsy-AWS/webserver.sh
