@@ -47,7 +47,7 @@ backend ourwebsiteendpoint
                      http-request set-header X-Forwarded-Port %[dst_port]
                      http-request add-header X-Forwarded-Proto https if { ssl_fc }
                      option httpchk HEAD / HTTP/1.1\r\nHost:localhost
-                     server backend-server1 192.168.2.11:8080 check
+                     server backend-server1 192.168.2.11:80 check
                      server backend-server2 192.168.3.11:80 check
 
 listen stats
