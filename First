@@ -1,19 +1,3 @@
-Untuk Provisioning Web Server
-
-#!/bin/bash
-git clone https://github.com/ikhsannugs/Project-Cilsy-AWS.git
-sudo chmod 500 /Project-Cilsy-AWS/webserver.sh
-/bin/bash /Project-Cilsy-AWS/webserver.sh
-
-
-Untuk Provisioning Load Balancer Nginx
-
-#!/bin/bash
-git clone https://github.com/ikhsannugs/Project-Cilsy-AWS.git
-sudo chmod 500 /Project-Cilsy-AWS/loadbalance.sh
-/bin/bash /Project-Cilsy-AWS/loadbalance.sh
-
-
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install unzip
@@ -22,3 +6,10 @@ sudo unzip /master
 sudo chmod 500 /Project-Cilsy-AWS-master/webserver.sh
 /bin/bash /Project-Cilsy-AWS-master/webserver.sh
 
+#!/bin/bash
+sudo apt-get update
+sudo apt-get install unzip
+wget https://codeload.github.com/ikhsannugs/Project-Cilsy-AWS/zip/master
+sudo unzip /master
+sudo chmod 500 /Project-Cilsy-AWS-master/loadbalance.sh
+/bin/bash /Project-Cilsy-AWS-master/loadbalance.sh
