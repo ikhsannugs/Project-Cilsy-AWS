@@ -18,7 +18,7 @@ chmod 500 /Project-Cilsy-AWS/loadbalance.sh
 sudo apt-get update
 sudo apt-get install unzip
 wget https://codeload.github.com/ikhsannugs/Project-Cilsy-AWS/zip/master
-unzip /master
-chmod 500 /Project-Cilsy-AWS/loadbalance.sh
-/bin/bash /Project-Cilsy-AWS/loadbalance.sh
+sudo unzip /master
+chmod 500 /Project-Cilsy-AWS/webserver.sh
+/bin/bash /Project-Cilsy-AWS/webserver.sh
 
