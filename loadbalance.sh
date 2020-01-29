@@ -4,7 +4,7 @@
         sudo apt-get update
         sudo apt-get install -y nginx
         sudo mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
-        sudo mv /Project-Cilsy-AWS/nginx/default.loadbalance /etc/nginx/sites-available/default
+        sudo mv /Project-Cilsy-AWS-master/nginx/default.loadbalance /etc/nginx/sites-available/default
         sudo nginx -t
         sudo nginx -s reload
         sudo systemctl restart nginx.service
