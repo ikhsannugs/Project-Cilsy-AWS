@@ -19,3 +19,14 @@ wget https://codeload.github.com/ikhsannugs/Project-Cilsy-AWS/zip/master
 sudo unzip /master
 sudo chmod 500 /Project-Cilsy-AWS-master/loadbalance.sh
 /bin/bash /Project-Cilsy-AWS-master/loadbalance.sh
+
+
+Provivisioning Load Balancer Haproxy
+
+#!/bin/bash
+sudo apt-get update
+sudo apt-get install unzip
+wget https://codeload.github.com/ikhsannugs/Project-Cilsy-AWS/zip/master
+sudo unzip /master
+sudo chmod 500 /Project-Cilsy-AWS-master/loadbalancehap.sh
+/bin/bash /Project-Cilsy-AWS-master/loadbalancehap.sh
