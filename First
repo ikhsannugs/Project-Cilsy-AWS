@@ -1,3 +1,5 @@
+Provisioning Web server
+
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install unzip
@@ -5,6 +7,10 @@ wget https://codeload.github.com/ikhsannugs/Project-Cilsy-AWS/zip/master
 sudo unzip /master
 sudo chmod 500 /Project-Cilsy-AWS-master/webserver.sh
 /bin/bash /Project-Cilsy-AWS-master/webserver.sh
+
+
+
+Provisioning Load Balancer Nginx
 
 #!/bin/bash
 sudo apt-get update
