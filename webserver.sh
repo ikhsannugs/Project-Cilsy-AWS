@@ -10,7 +10,7 @@
         sudo nginx -s reload
         sudo systemctl restart php7.2-fpm.service
         sudo systemctl restart nginx.service
-        sudo apt-get install -y mysql-serve
+        sudo apt-get install -y mysql-server
         sudo mysql -u root -e "SELECT user,authentication_string,plugin,host FROM mysql.user;"
         sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Abcd1234567890-';"
         sudo mysql -u root -p"Abcd1234567890-" -e "FLUSH PRIVILEGES;"
