@@ -1,9 +1,9 @@
 <?php
 
-$db_host = "localhost";
-$db_user = "devopscilsy";
-$db_pass = "1234567890";
-$db_name = "dbsosmed";
+$db_host = "pesbukdb.citrm16v9p2y.ap-southeast-1.rds.amazonaws.com";
+$db_user = "admin";
+$db_pass = "admin123";
+$db_name = "pesbukdatabase";
 
 try {    
     //create PDO connection 
