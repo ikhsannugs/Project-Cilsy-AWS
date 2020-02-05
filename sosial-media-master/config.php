@@ -1,6 +1,6 @@
 <?php
 
-$db_host = "pesbukdb.citrm16v9p2y.ap-southeast-1.rds.amazonaws.com";
+$db_host = "database-1.citrm16v9p2y.ap-southeast-1.rds.amazonaws.com";
 $db_user = "admin";
 $db_pass = "admin123";
 $db_name = "pesbukdatabase";
