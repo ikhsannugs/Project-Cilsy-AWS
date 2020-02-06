@@ -5,10 +5,16 @@ sudo apt-get update
 sudo apt-get install unzip
 wget https://codeload.github.com/ikhsannugs/Project-Cilsy-AWS/zip/master
 sudo unzip /master
+#webserver.sh
 sudo sed -i 's/username/admin/g' /Project-Cilsy-AWS-master/webserver.sh  
 sudo sed -i 's/password/abcd1234567890/g' /Project-Cilsy-AWS-master/webserver.sh  
 sudo sed -i 's/database/pesbukdb/g' /Project-Cilsy-AWS-master/webserver.sh
-sudo sed -i 's/alamat/database-1.citrm16v9p2y.ap-southeast-1.rds.amazonaws.com/g' /Project-Cilsy-AWS-master/webserver.sh  
+sudo sed -i 's/alamat/database-1.citrm16v9p2y.ap-southeast-1.rds.amazonaws.com/g' /Project-Cilsy-AWS-master/webserver.sh 
+#config.php
+sudo sed -i 's/username/admin/g' /Project-Cilsy-AWS/sosial-media-master/config.php   
+sudo sed -i 's/password/abcd1234567890/g' /Project-Cilsy-AWS/sosial-media-master/config.php   
+sudo sed -i 's/database/pesbukdb/g' /Project-Cilsy-AWS/sosial-media-master/config.php 
+sudo sed -i 's/alamat/database-1.citrm16v9p2y.ap-southeast-1.rds.amazonaws.com/g'  /Project-Cilsy-AWS/sosial-media-master/config.php  
 sudo chmod 500 /Project-Cilsy-AWS-master/webserver.sh
 /bin/bash /Project-Cilsy-AWS-master/webserver.sh
 
