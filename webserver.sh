@@ -10,5 +10,10 @@
         sudo nginx -s reload
         sudo systemctl restart php7.2-fpm.service
         sudo systemctl restart nginx.service
+        
+        #mysql
+        mysql -h alamat -u admin -p"abcd1234567890" -e "CREATE DATABASE pesbukdb;"
+        mysql -h alamat -u admin -p"abcd1234567890" -e "GRANT ALL ON pesbukdb.* TO 'admin'@'%';"
+        mysql -h alamat -u admin -p"abcd1234567890" -e "FLUSH PRIVILEGES;"
 
         
