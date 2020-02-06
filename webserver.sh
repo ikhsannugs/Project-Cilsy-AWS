@@ -12,8 +12,10 @@
         sudo systemctl restart nginx.service
         
         #mysql
-        mysql -h alamat -u admin -p"abcd1234567890" -e "CREATE DATABASE pesbukdb;"
-        mysql -h alamat -u admin -p"abcd1234567890" -e "GRANT ALL ON pesbukdb.* TO 'admin'@'%';"
-        mysql -h alamat -u admin -p"abcd1234567890" -e "FLUSH PRIVILEGES;"
+        mysql -h alamat -u username -p"password" -e "CREATE DATABASE database;"
+        mysql -h alamat -u username -p"password" -e "GRANT ALL ON database.* TO 'username'@'%';"
+        mysql -h alamat -u username -p"password" -e "FLUSH PRIVILEGES;"
+        cd /var/www/html
+        mysql -h alamat -u username -p"password" database < dump.sql
 
         
